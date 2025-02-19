@@ -11,7 +11,10 @@ macro_rules! advent_of_rust {
             pub fn ignore_clippy_unused_errors() {
                 $(
                     let _ = [<day_ $day>]::part_1;
-                    let _ = [<day_ $day>]::part_2;
+                    $(
+                        let _ = [<day_ $day>]::part_2;
+                        let _ = $part_2;
+                    )?
                 )*
             }
 
