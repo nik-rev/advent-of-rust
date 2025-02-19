@@ -4,4 +4,4 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-advent-of-rust = "0.1"
+advent-of-rust = { path = "../advent-of-rust", version = "0.1" }
