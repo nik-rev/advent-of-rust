@@ -11,7 +11,7 @@ This minimal example will test day `4` which has a `part_2` and `part_1`.
 
 Filename: `src/day_4.rs`.
 
-```rust,ignore
+```rust ignore
 pub fn part_1(input: &str) -> u64 {
     99999
 }
@@ -23,7 +23,7 @@ pub fn part_2(input: &str) -> &str {
 
 Filename: `src/lib.rs`.
 
-```ignore
+```rust ignore
 advent_of_rust::advent_of_rust! {
   4 => 99999, "Advent of Rust!";
 }
@@ -68,7 +68,7 @@ Each module _must_ have a `part_1` function and may also have a `part_2` as well
 
 An example `src/lib.rs` with multiple days:
 
-```ignore
+```rust ignore
 advent_of_rust::advent_of_rust! {
   1 => 1234, "Advent of Rust!";
   22 => "hello";
