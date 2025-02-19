@@ -1,3 +1,3 @@
-common::advent_of_rust! {
-    1 => 2192892, 22962826;
+advent_of_rust::advent_of_rust! {
+  4 => 99999, "Advent of Rust!";
 }

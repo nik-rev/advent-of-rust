@@ -3,7 +3,7 @@
 version = 4
 
 [[package]]
-name = "common"
+name = "advent-of-rust"
 version = "0.1.0"
 dependencies = [
  "paste",
