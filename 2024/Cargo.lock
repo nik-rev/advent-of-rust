@@ -5,6 +5,8 @@ version = 4
 [[package]]
 name = "advent-of-rust"
 version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "b5f8e5041d7443d7edfd5b236996696aa9e5dd904d641c4da6c0bd207651ccb0"
 dependencies = [
  "paste",
 ]

@@ -81,7 +81,7 @@ advent_of_rust::advent_of_rust! {
 For the above to compile you will need the following in `src/` dir:
 
 - `day_1.rs` with `fn part_1(&str) -> u16` and `fn part_2(&str) -> &str` and `day_1.txt` .
-- `day_22.rs` with `fn part_1(&str) -> u16` and `day_22.txt`.
+- `day_22.rs` with `fn part_1(&str) -> &str` and `day_22.txt`.
 - `day_3.rs` with `fn part_1(&str) -> u16` and `day_3.txt` .
-- `day_4.rs` with `fn part_1(&str) -> u16` and `fn part_2(&str) -> &str` and `day_4.txt` .
-- `day_8.rs` with `fn part_1(&str) -> u16` and `fn part_2(&str) -> &str` and `day_8.txt` .
+- `day_4.rs` with `fn part_1(&str) -> Result<u32>` and `fn part_2(&str) -> bool` and `day_4.txt` .
+- `day_8.rs` with `fn part_1(&str) -> u16` and `fn part_2(&str) -> Result<bool>` and `day_8.txt` .
