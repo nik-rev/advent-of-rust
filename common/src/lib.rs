@@ -4,9 +4,16 @@ pub use paste::paste;
 macro_rules! advent_of_rust {
     ($($day:expr => $part_1:expr, $part_2:expr);* $(;)?) => {
         use common::paste;
+
         paste! {
             $(mod [<day_ $day>];)*
-            use common::Solution;
+
+            pub fn ignore_clippy_unused_errors() {
+                $(
+                    let _ = [<day_ $day>]::part_1("");
+                    let _ = [<day_ $day>]::part_2("");
+                )*
+            }
 
             mod tests {
                 use super::*;
