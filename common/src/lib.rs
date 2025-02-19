@@ -18,12 +18,16 @@ macro_rules! advent_of_rust {
             mod tests {
                 use super::*;
                 $(
-                    #[test]
-                    fn [<day_ $day>]() {
-                        let input = include_str!(concat!("day_", $day, ".txt"));
+                    const [<day_ $day _input>]: &str = include_str!(concat!("day_", $day, ".txt"));
 
-                        assert_eq!([<day_ $day>]::part_1(input), $part_1);
-                        assert_eq!([<day_ $day>]::part_2(input), $part_2);
+                    #[test]
+                    fn [<day_ $day _part1>]() {
+                        assert_eq!([<day_ $day>]::part_1([<day_ $day _input>]), $part_1);
+                    }
+
+                    #[test]
+                    fn [<day_ $day _part2>]() {
+                        assert_eq!([<day_ $day>]::part_2([<day_ $day _input>]), $part_2);
                     }
                 )*
             }
