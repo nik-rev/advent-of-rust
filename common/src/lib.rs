@@ -1,10 +1,5 @@
 pub use paste::paste;
 
-pub trait Solution {
-    fn part_1(input: &str) -> &str;
-    fn part_2(input: &str) -> &str;
-}
-
 #[macro_export]
 macro_rules! advent_of_rust {
     ($($day:expr => $part_1:expr, $part_2:expr);* $(;)?) => {
